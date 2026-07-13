@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion';
-import { Lock } from 'lucide-react';
-import { ChromeIcon, GithubIcon } from './ui/BrandIcons';
+import { Lock, Puzzle } from 'lucide-react';
 import { Container } from './ui/Container';
 import { Button } from './ui/Button';
 import { HeroMockup } from './HeroMockup';
-import { CHROME_STORE_URL, GITHUB_URL } from '../config';
+import { CHROME_STORE_URL } from '../config';
 import { fadeUp, stagger, useEntrance } from '../lib/motion';
 
 export function Hero() {
@@ -52,12 +51,8 @@ export function Hero() {
 
             <motion.div variants={fadeUp} className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button href={CHROME_STORE_URL} size="lg">
-                <ChromeIcon className="h-5 w-5" aria-hidden />
-                Add to Chrome
-              </Button>
-              <Button href={GITHUB_URL} variant="secondary" size="lg">
-                <GithubIcon className="h-5 w-5" aria-hidden />
-                View on GitHub
+                <Puzzle className="h-5 w-5" aria-hidden />
+                Add to Chrome / Brave
               </Button>
             </motion.div>
 
@@ -65,7 +60,7 @@ export function Hero() {
               variants={fadeUp}
               className="mt-6 text-sm font-medium text-slate-500 dark:text-slate-400"
             >
-              100% local · No account · Free &amp; open source
+              100% local · No account · Free
             </motion.p>
           </motion.div>
 

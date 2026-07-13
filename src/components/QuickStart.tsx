@@ -1,7 +1,6 @@
 import type { ComponentType } from 'react';
 import { motion } from 'framer-motion';
-import { Download, Play, Info } from 'lucide-react';
-import { ChromeIcon } from './ui/BrandIcons';
+import { Download, Play, Info, Puzzle } from 'lucide-react';
 import { Container } from './ui/Container';
 import { Section, SectionHeading } from './ui/Section';
 import { Button } from './ui/Button';
@@ -31,15 +30,14 @@ export function QuickStart() {
             variants={fadeUp}
             className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900"
           >
-            <StepHeader n={1} icon={ChromeIcon} title="Install the extension" />
+            <StepHeader n={1} icon={Puzzle} title="Install the extension" />
             <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-              Add NoteCast to Chrome or Brave (version 116 or newer). It’s free
-              and open source.
+              Add NoteCast to Chrome or Brave (version 116 or newer). It’s free.
             </p>
             <div className="mt-4">
               <Button href={CHROME_STORE_URL} size="md">
-                <ChromeIcon className="h-4 w-4" aria-hidden />
-                Add to Chrome
+                <Puzzle className="h-4 w-4" aria-hidden />
+                Add to Chrome / Brave
               </Button>
             </div>
           </motion.li>

@@ -1,13 +1,10 @@
 import { Mail } from 'lucide-react';
-import { GithubIcon } from './ui/BrandIcons';
 import { Container } from './ui/Container';
 import { Logo } from './ui/Logo';
-import { GITHUB_URL, PRIVACY_URL, LICENSE_URL, CONTACT_EMAIL } from '../config';
+import { PRIVACY_URL, CONTACT_EMAIL } from '../config';
 
 const LINKS = [
-  { label: 'GitHub', href: GITHUB_URL, external: true },
-  { label: 'Privacy Policy', href: PRIVACY_URL, external: true },
-  { label: 'License (MIT)', href: LICENSE_URL, external: true },
+  { label: 'Privacy Policy', href: PRIVACY_URL, external: false },
 ];
 
 export function Footer() {
@@ -20,7 +17,7 @@ export function Footer() {
               <Logo />
             </a>
             <p className="mt-3 max-w-xs text-sm text-slate-500 dark:text-slate-400">
-              Private, on-device notes from any browser tab. Free and open source.
+              Private, on-device notes from any browser tab. Free.
             </p>
           </div>
 
@@ -30,11 +27,10 @@ export function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    target="_blank"
-                    rel="noreferrer noopener"
+                    target={link.external ? '_blank' : undefined}
+                    rel={link.external ? 'noreferrer noopener' : undefined}
                     className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 transition-colors hover:text-brand-600 dark:text-slate-300 dark:hover:text-brand-400"
                   >
-                    {link.label === 'GitHub' && <GithubIcon className="h-4 w-4" aria-hidden />}
                     {link.label}
                   </a>
                 </li>
@@ -54,7 +50,7 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-slate-100 pt-6 text-sm text-slate-500 sm:flex-row dark:border-slate-800/70 dark:text-slate-400">
           <p>Made for people who like to keep their data.</p>
-          <p>© {new Date().getFullYear()} NoteCast · MIT licensed</p>
+          <p>© {new Date().getFullYear()} NoteCast</p>
         </div>
       </Container>
     </footer>

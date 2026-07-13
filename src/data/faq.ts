@@ -7,7 +7,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Is it really free?',
     answer:
-      'Yes. NoteCast is free and open source under the MIT license. There is no paid tier, no subscription, and no “pro” upsell.',
+      'Yes. NoteCast is completely free. There is no paid tier, no subscription, and no “pro” upsell.',
   },
   {
     question: 'Does my audio go to the cloud?',
@@ -33,10 +33,5 @@ export const FAQ_ITEMS: FaqItem[] = [
     question: 'Which browsers are supported?',
     answer:
       'NoteCast is a Manifest V3 extension for Chromium browsers — specifically Chrome and Brave, version 116 and newer.',
-  },
-  {
-    question: 'Is it open source?',
-    answer:
-      'Yes. NoteCast is released under the MIT license, so you can read the code, audit exactly what it does, and contribute.',
   },
 ];

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import { ChromeIcon } from './ui/BrandIcons';
+import { Menu, X, Puzzle } from 'lucide-react';
 import { NAV_ITEMS } from '../data/nav';
 import { CHROME_STORE_URL } from '../config';
 import { Container } from './ui/Container';
@@ -61,8 +60,8 @@ export function Nav() {
             <ThemeToggle />
             <div className="hidden md:block">
               <Button href={CHROME_STORE_URL} size="md">
-                <ChromeIcon className="h-4 w-4" aria-hidden />
-                Add to Chrome
+                <Puzzle className="h-4 w-4" aria-hidden />
+                Add to Chrome / Brave
               </Button>
             </div>
 
@@ -99,8 +98,8 @@ export function Nav() {
               ))}
               <li className="mt-2">
                 <Button href={CHROME_STORE_URL} size="lg" className="w-full" onClick={() => setOpen(false)}>
-                  <ChromeIcon className="h-4 w-4" aria-hidden />
-                  Add to Chrome
+                  <Puzzle className="h-4 w-4" aria-hidden />
+                  Add to Chrome / Brave
                 </Button>
               </li>
             </ul>
