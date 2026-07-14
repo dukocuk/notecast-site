@@ -12,7 +12,7 @@ export const STEPS: Step[] = [
     icon: Play,
     title: 'Play a tab and hit Start',
     description:
-      'Open any lecture, meeting, video, podcast, or webinar in a tab and press Start — or just tap Ctrl/Cmd + Shift + S.',
+      'Open any lecture, meeting, video, podcast, or webinar in a tab and press Start — or just tap Ctrl/Cmd + Shift + E.',
   },
   {
     icon: AudioLines,

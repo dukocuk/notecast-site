@@ -14,4 +14,4 @@ export const PRIVACY_URL = `${import.meta.env.BASE_URL}privacy.html`;
 export const CONTACT_EMAIL = 'duran.kse@gmail.com';
 
 // Keyboard shortcut shown throughout the site.
-export const SHORTCUT = 'Ctrl/Cmd + Shift + S';
+export const SHORTCUT = 'Ctrl/Cmd + Shift + E';

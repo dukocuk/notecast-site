@@ -47,7 +47,7 @@ export const FEATURES: Feature[] = [
     icon: Keyboard,
     title: 'Keyboard shortcut',
     description:
-      'Start and stop capture with Ctrl/Cmd + Shift + S — no need to open the popup first.',
+      'Start and stop capture with Ctrl/Cmd + Shift + E — no need to open the popup first.',
   },
   {
     icon: History,

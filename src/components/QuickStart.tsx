@@ -75,7 +75,7 @@ export function QuickStart() {
               Open any audio or video in a tab and press Start — or use the
               shortcut{' '}
               <kbd className="rounded-md border border-slate-300 bg-slate-100 px-1.5 py-0.5 font-mono text-xs text-slate-700 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200">
-                Ctrl/Cmd + Shift + S
+                Ctrl/Cmd + Shift + E
               </kbd>
               . Notes start building right away.
             </p>
