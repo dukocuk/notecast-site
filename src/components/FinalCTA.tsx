@@ -25,25 +25,29 @@ export function FinalCTA() {
             variants={fadeUp}
             className="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl"
           >
-            Clean notes from any tab — and they never leave your machine
+            Clean notes from any tab — transcribed on your own machine
           </motion.h2>
           <motion.p
             variants={fadeUp}
             className="mx-auto mt-4 max-w-xl text-lg text-slate-600 text-pretty dark:text-slate-400"
           >
-            Free and private by design. Add NoteCast and start capturing in a
+            Free and private by design. Add NoteCast and start transcribing in a
             couple of minutes.
           </motion.p>
 
           <motion.div variants={fadeUp} className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Button href={CHROME_STORE_URL} size="lg">
               <Puzzle className="h-5 w-5" aria-hidden />
-              Add to Chrome / Brave
+              Add to Chrome, Brave, or Edge
             </Button>
           </motion.div>
 
+          <motion.p variants={fadeUp} className="mt-4 text-sm text-slate-500 dark:text-slate-400">
+            A Firefox build is on the way.
+          </motion.p>
+
           <motion.p variants={fadeUp} className="mt-6 text-sm font-medium text-slate-500 dark:text-slate-400">
-            100% local · No account · Free
+            Audio never leaves your device · No account · Free
           </motion.p>
         </motion.div>
       </Container>
