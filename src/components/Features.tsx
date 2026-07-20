@@ -13,7 +13,7 @@ export function Features() {
           titleId="features-title"
           eyebrow="Features"
           title="Everything you need, nothing you don’t"
-          description="Thoughtful capture, live notes, and export — all running locally, all yours to keep."
+          description="Live transcripts, structured notes, and clean exports — all running on your own machine, all yours to keep."
         />
 
         <motion.ul
