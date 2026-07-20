@@ -25,14 +25,14 @@ export function Hero() {
               className="mb-5 inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-3.5 py-1.5 text-sm font-medium text-brand-700 dark:border-brand-800/60 dark:bg-brand-950/40 dark:text-brand-300"
             >
               <Lock className="h-3.5 w-3.5" aria-hidden />
-              Private by design — runs on your machine
+              Private by design — your audio never leaves your machine
             </motion.p>
 
             <motion.h1
               variants={fadeUp}
               className="text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl"
             >
-              Turn any tab into clean,{' '}
+              Turn anything you hear into{' '}
               <span className="bg-gradient-to-r from-brand-600 to-accent-500 bg-clip-text text-transparent">
                 structured notes
               </span>{' '}
@@ -43,16 +43,16 @@ export function Hero() {
               variants={fadeUp}
               className="mt-5 max-w-xl text-lg leading-relaxed text-slate-600 text-pretty dark:text-slate-400"
             >
-              NoteCast captures the audio of any browser tab — lectures, meetings,
-              videos, podcasts — transcribes it on your device with Whisper, and
+              Lectures, meetings, videos, podcasts — or an audio file sitting on
+              your disk. NoteCast transcribes it on your device with Whisper and
               turns it into a live summary, key points, and action items using
-              your own local model.
+              your own local model. Nothing is uploaded.
             </motion.p>
 
             <motion.div variants={fadeUp} className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button href={CHROME_STORE_URL} size="lg">
                 <Puzzle className="h-5 w-5" aria-hidden />
-                Add to Chrome / Brave
+                Add to Chrome / Brave / Edge
               </Button>
             </motion.div>
 
@@ -60,7 +60,14 @@ export function Hero() {
               variants={fadeUp}
               className="mt-6 text-sm font-medium text-slate-500 dark:text-slate-400"
             >
-              100% local · No account · Free
+              100% local · No account · No API keys · Free
+            </motion.p>
+
+            <motion.p
+              variants={fadeUp}
+              className="mt-2 text-sm text-slate-400 dark:text-slate-500"
+            >
+              A Firefox build is on the way.
             </motion.p>
           </motion.div>
 
