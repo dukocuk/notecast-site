@@ -17,7 +17,7 @@ export function Footer() {
               <Logo />
             </a>
             <p className="mt-3 max-w-xs text-sm text-slate-500 dark:text-slate-400">
-              Private, on-device notes from any browser tab. Free.
+              Private, on-device notes from any tab or audio file. Free.
             </p>
           </div>
 
