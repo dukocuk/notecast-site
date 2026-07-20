@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { CloudOff, ServerOff, KeyRound, ShieldCheck, X, Check } from 'lucide-react';
+import { CloudOff, WifiOff, KeyRound, ShieldCheck, X, Check } from 'lucide-react';
 import { Container } from './ui/Container';
 import { fadeUp, stagger, useReveal } from '../lib/motion';
 
@@ -11,15 +11,15 @@ const CLOUD_TOOLS = [
 ];
 
 const NOTECAST = [
-  'Captures and transcribes entirely on your device',
+  'Transcribes entirely on your own device',
   'No account, no sign-up, no subscription',
-  'No API keys — your local models do the work',
-  'Nothing is uploaded, so there’s nothing to leak',
+  'No vendor API keys — your local models do the work',
+  'Your audio is never uploaded, so there’s nothing to leak',
 ];
 
 const PILLARS = [
   { icon: CloudOff, label: 'No cloud' },
-  { icon: ServerOff, label: 'No server' },
+  { icon: WifiOff, label: 'Works offline' },
   { icon: KeyRound, label: 'No keys' },
   { icon: ShieldCheck, label: 'Nothing to leak' },
 ];
@@ -58,9 +58,10 @@ export function PrivacySpotlight() {
             Your audio never leaves your machine
           </motion.h2>
           <motion.p variants={fadeUp} className="mt-4 text-lg leading-relaxed text-brand-100 text-pretty">
-            Most transcription tools send your recordings to the cloud. NoteCast
-            doesn’t send them anywhere — because there’s no cloud, no server, and
-            no account involved at all.
+            Most transcription tools send your audio to the cloud. NoteCast sends
+            it nowhere at all — Whisper runs inside your browser, and the model
+            that writes your notes runs on your own machine. No third-party
+            cloud, no account, no vendor API keys.
           </motion.p>
         </motion.div>
 
