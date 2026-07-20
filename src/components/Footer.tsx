@@ -4,7 +4,8 @@ import { Logo } from './ui/Logo';
 import { PRIVACY_URL, CONTACT_EMAIL } from '../config';
 
 const LINKS = [
-  { label: 'Privacy Policy', href: PRIVACY_URL, external: false },
+  { label: 'Privacy Policy', href: PRIVACY_URL, external: false, icon: undefined },
+  { label: 'Contact', href: `mailto:${CONTACT_EMAIL}`, external: false, icon: Mail },
 ];
 
 export function Footer() {
@@ -23,27 +24,19 @@ export function Footer() {
 
           <nav aria-label="Footer" className="flex flex-col items-center gap-3 md:items-end">
             <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-              {LINKS.map((link) => (
-                <li key={link.label}>
+              {LINKS.map(({ label, href, external, icon: Icon }) => (
+                <li key={label} className="flex">
                   <a
-                    href={link.href}
-                    target={link.external ? '_blank' : undefined}
-                    rel={link.external ? 'noreferrer noopener' : undefined}
+                    href={href}
+                    target={external ? '_blank' : undefined}
+                    rel={external ? 'noreferrer noopener' : undefined}
                     className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 transition-colors hover:text-brand-600 dark:text-slate-300 dark:hover:text-brand-400"
                   >
-                    {link.label}
+                    {Icon && <Icon className="h-4 w-4" aria-hidden />}
+                    {label}
                   </a>
                 </li>
               ))}
-              <li>
-                <a
-                  href={`mailto:${CONTACT_EMAIL}`}
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 transition-colors hover:text-brand-600 dark:text-slate-300 dark:hover:text-brand-400"
-                >
-                  <Mail className="h-4 w-4" aria-hidden />
-                  Contact
-                </a>
-              </li>
             </ul>
           </nav>
         </div>
