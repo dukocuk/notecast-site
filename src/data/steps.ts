@@ -10,20 +10,20 @@ export interface Step {
 export const STEPS: Step[] = [
   {
     icon: Play,
-    title: 'Play a tab and hit Start',
+    title: 'Start on a tab, or pick a file',
     description:
-      'Open any lecture, meeting, video, podcast, or webinar in a tab and press Start — or just tap Ctrl/Cmd + Shift + E.',
+      'Open any lecture, meeting, video, podcast, or webinar in a tab and press Start — or tap Ctrl/Cmd + Shift + E. You can also transcribe an audio or video file straight from your disk.',
   },
   {
     icon: AudioLines,
     title: 'Whisper transcribes on your device',
     description:
-      'NoteCast captures the tab’s audio and transcribes it locally with Whisper, running on your GPU (WebGPU) or CPU (WASM).',
+      'The audio is transcribed locally with Whisper, on your GPU (WebGPU) or CPU (WASM). Pick Base, Small, Medium, or Large depending on how much accuracy you want. Nothing is uploaded.',
   },
   {
     icon: Sparkles,
     title: 'Your Ollama model writes the notes',
     description:
-      'A local Ollama model turns the growing transcript into a live summary, key points, and action items as you watch.',
+      'A local Ollama model turns the growing transcript into a live summary, key points, and action items as you watch. One-time install — NoteCast sets it up for you on first run.',
   },
 ];

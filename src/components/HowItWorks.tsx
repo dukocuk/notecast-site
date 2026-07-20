@@ -13,8 +13,8 @@ export function HowItWorks() {
         <SectionHeading
           titleId="how-it-works-title"
           eyebrow="How it works"
-          title="From tab audio to structured notes in three steps"
-          description="No configuration marathon. Play something, hit Start, and watch the notes build themselves."
+          title="From any audio to structured notes in three steps"
+          description="Play a video, start a lecture, or pick a file from your disk. Hit Start and watch the transcript and notes build themselves — every second of it on your own machine."
         />
 
         <motion.ol

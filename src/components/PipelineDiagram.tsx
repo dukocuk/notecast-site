@@ -8,16 +8,16 @@ interface Stage {
 }
 
 const STAGES: Stage[] = [
-  { icon: AudioLines, label: 'Tab audio', sub: 'the tab you choose' },
+  { icon: AudioLines, label: 'Tab or file audio', sub: 'the tab or file you pick' },
   { icon: Cpu, label: 'On-device Whisper', sub: 'WebGPU → WASM' },
   { icon: Bot, label: 'Your local Ollama', sub: 'your own model' },
-  { icon: NotebookPen, label: 'Live notes', sub: 'summary + actions' },
+  { icon: NotebookPen, label: 'Live notes', sub: 'summary, points, actions' },
 ];
 
 /**
- * The core visual: tab audio → on-device Whisper → your local Ollama → live
- * notes, all enclosed inside a dashed "Your computer" boundary to make it
- * unmistakable that nothing leaves the device.
+ * The core visual: the tab or file you pick → on-device Whisper → your local
+ * Ollama → live notes, all enclosed inside a dashed "Your computer" boundary to
+ * make it unmistakable that nothing leaves the device.
  */
 export function PipelineDiagram() {
   return (
@@ -51,7 +51,7 @@ export function PipelineDiagram() {
       </ol>
 
       <p className="mt-6 text-center text-sm text-slate-500 dark:text-slate-400">
-        No cloud services, no servers, no accounts — every step runs where your
+        No cloud services, no accounts, no API keys — every step runs where your
         browser does.
       </p>
     </div>
