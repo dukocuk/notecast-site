@@ -61,7 +61,7 @@ export function Nav() {
             <div className="hidden md:block">
               <Button href={CHROME_STORE_URL} size="md">
                 <Puzzle className="h-4 w-4" aria-hidden />
-                Add to Chrome / Brave
+                Add to Chrome / Brave / Edge
               </Button>
             </div>
 
@@ -99,7 +99,7 @@ export function Nav() {
               <li className="mt-2">
                 <Button href={CHROME_STORE_URL} size="lg" className="w-full" onClick={() => setOpen(false)}>
                   <Puzzle className="h-4 w-4" aria-hidden />
-                  Add to Chrome / Brave
+                  Add to Chrome / Brave / Edge
                 </Button>
               </li>
             </ul>
