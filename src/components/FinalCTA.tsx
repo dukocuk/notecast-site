@@ -42,10 +42,6 @@ export function FinalCTA() {
             </Button>
           </motion.div>
 
-          <motion.p variants={fadeUp} className="mt-4 text-sm text-slate-500 dark:text-slate-400">
-            A Firefox build is on the way.
-          </motion.p>
-
           <motion.p variants={fadeUp} className="mt-6 text-sm font-medium text-slate-500 dark:text-slate-400">
             Audio never leaves your device · No account · Free
           </motion.p>

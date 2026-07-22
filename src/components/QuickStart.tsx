@@ -33,7 +33,7 @@ export function QuickStart() {
             <StepHeader n={1} icon={Puzzle} title="Install the extension" />
             <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
               Add NoteCast to Chrome, Brave, or Edge (version 116 or newer). It’s
-              free. A Firefox build is on the way.
+              free.
             </p>
             <div className="mt-4">
               <Button href={CHROME_STORE_URL} size="md">

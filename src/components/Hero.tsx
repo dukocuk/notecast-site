@@ -63,12 +63,6 @@ export function Hero() {
               100% local · No account · No API keys · Free
             </motion.p>
 
-            <motion.p
-              variants={fadeUp}
-              className="mt-2 text-sm text-slate-400 dark:text-slate-500"
-            >
-              A Firefox build is on the way.
-            </motion.p>
           </motion.div>
 
           <motion.div

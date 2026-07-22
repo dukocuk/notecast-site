@@ -70,9 +70,8 @@ export function PrivacyPolicy() {
                 <Term>Audio you select</Term> is captured only when you explicitly start
                 a session (toolbar button or keyboard shortcut) and is processed entirely
                 on your device by a local Whisper speech-recognition model (WebGPU/WASM).
-                On Chrome, Brave, and Edge this is the audio of the tab you chose; on
-                Firefox it is the media element (the video or audio player) on the page
-                you chose. Audio is never written to disk and never transmitted anywhere.
+                On Chrome, Brave, and Edge this is the audio of the tab you chose;
+                Audio is never written to disk and never transmitted anywhere.
               </li>
               <li>
                 <Term>Audio and video files you pick</Term> for the “Transcribe file”
@@ -148,8 +147,7 @@ export function PrivacyPolicy() {
               <Code>huggingface.co</Code> (model downloads), and <Code>youtube.com</Code>.
               The Chrome/Edge build additionally uses <Code>tabCapture</Code> (capture the
               audio of the tab you ask it to) and <Code>offscreen</Code> (the hidden page
-              that holds the audio stream and runs Whisper); the Firefox build has neither
-              and captures the page’s media element instead.
+              that holds the audio stream and runs Whisper);
             </p>
             <p className="mt-4 leading-relaxed text-slate-600 dark:text-slate-400">
               While a session is running, a small content script runs in the page you chose

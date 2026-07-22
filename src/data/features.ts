@@ -50,7 +50,7 @@ export const FEATURES: Feature[] = [
     icon: Puzzle,
     title: 'Chrome, Brave, and Edge',
     description:
-      'A Manifest V3 extension for Chromium browsers, version 116 and newer. A Firefox build is on the way.',
+      'A Manifest V3 extension for Chromium browsers, version 116 and newer.',
   },
   {
     icon: Keyboard,

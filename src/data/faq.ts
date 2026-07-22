@@ -32,7 +32,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Which browsers are supported?',
     answer:
-      'Chrome, Brave, and Edge, version 116 and newer — the same Manifest V3 package works in all three. A Firefox build is on the way. On Edge you assign the keyboard shortcut yourself at edge://extensions/shortcuts.',
+      'Chrome, Brave, and Edge, version 116 and newer — the same Manifest V3 package works in all three. On Edge you assign the keyboard shortcut yourself at edge://extensions/shortcuts.',
   },
   {
     question: 'Can I transcribe a file I already have?',
