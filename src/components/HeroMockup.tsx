@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
+import liveShot from '../assets/screen-live.png';
 import notesShot from '../assets/screen-notes.png';
 import transcriptShot from '../assets/screen-transcript.png';
 import historyShot from '../assets/screen-history.png';
@@ -14,19 +15,24 @@ import historyShot from '../assets/screen-history.png';
 
 const slides = [
   {
+    src: liveShot,
+    label: 'Live',
+    alt: 'NoteCast actively transcribing a lecture, with Pause and Stop controls, a GPU badge and time-stamped segments streaming into the Transcript tab.',
+  },
+  {
     src: notesShot,
     label: 'Notes',
-    alt: 'NoteCast Notes tab showing an auto-generated summary and key points for a lecture on theories of learning.',
+    alt: 'NoteCast Notes tab showing an auto-generated summary, key decisions and key points for a lecture on theories of learning.',
   },
   {
     src: transcriptShot,
     label: 'Transcript',
-    alt: 'NoteCast Transcript tab showing time-stamped, live transcription segments while capturing.',
+    alt: 'NoteCast Transcript tab showing the time-stamped segments of a finished capture, ready to review or export.',
   },
   {
     src: historyShot,
     label: 'History',
-    alt: 'NoteCast History tab listing a previously captured session with its date, duration and segment count.',
+    alt: 'NoteCast History tab listing previously captured sessions with their dates, durations and segment counts.',
   },
 ];
 
