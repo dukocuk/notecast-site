@@ -1,33 +1,33 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
-import liveShot from '../assets/screen-live.png';
-import notesShot from '../assets/screen-notes.png';
 import transcriptShot from '../assets/screen-transcript.png';
+import notesShot from '../assets/screen-notes.png';
+import askShot from '../assets/screen-ask.png';
 import historyShot from '../assets/screen-history.png';
 
 /**
- * An auto-rotating showcase of real NoteCast screenshots — the Notes, Transcript
- * and History tabs. The images already include the app's window chrome and
- * background, so we just cross-fade between them inside a soft-glowing frame.
- * Auto-rotation is disabled for anyone who prefers reduced motion; the dot
- * controls still let them switch slides.
+ * An auto-rotating showcase of real NoteCast screenshots — the Transcript,
+ * Notes, Ask and History tabs. The images already include the app's window
+ * chrome and background, so we just cross-fade between them inside a
+ * soft-glowing frame. Auto-rotation is disabled for anyone who prefers reduced
+ * motion; the dot controls still let them switch slides.
  */
 
 const slides = [
   {
-    src: liveShot,
-    label: 'Live',
-    alt: 'NoteCast actively transcribing a lecture, with Pause and Stop controls, a GPU badge and time-stamped segments streaming into the Transcript tab.',
+    src: transcriptShot,
+    label: 'Transcript',
+    alt: 'NoteCast actively transcribing a lecture, with Pause and Stop controls, a GPU badge and time-stamped, speaker-labelled segments streaming into the Transcript tab.',
   },
   {
     src: notesShot,
     label: 'Notes',
-    alt: 'NoteCast Notes tab showing an auto-generated summary, key decisions and key points for a lecture on theories of learning.',
+    alt: 'NoteCast Notes tab showing an auto-generated summary with key points, plus Action Items and Open Questions sections, for a lecture on theories of learning.',
   },
   {
-    src: transcriptShot,
-    label: 'Transcript',
-    alt: 'NoteCast Transcript tab showing the time-stamped segments of a finished capture, ready to review or export.',
+    src: askShot,
+    label: 'Ask',
+    alt: 'NoteCast Ask tab showing a chat-style answer that summarises the session in three sentences, with a model picker for the local Ask model.',
   },
   {
     src: historyShot,
@@ -60,14 +60,14 @@ export function HeroMockup() {
 
       <div className="overflow-hidden rounded-2xl border border-slate-200/80 shadow-soft-lg dark:border-slate-800">
         {/* Fixed-ratio stage so slides can cross-fade without shifting height. */}
-        <div className="relative aspect-[1280/736]">
+        <div className="relative aspect-[1280/800]">
           <AnimatePresence initial={false} mode="sync">
             <motion.img
               key={active}
               src={slides[active].src}
               alt={slides[active].alt}
               width={1280}
-              height={736}
+              height={800}
               className="absolute inset-0 h-full w-full object-cover"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
